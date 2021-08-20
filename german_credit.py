@@ -37,7 +37,7 @@ algo.set_options(timeout=3000)  # optional
 
  
 
-def apply(input):
+def apply():
     
     test_sample = pd.read_json(client.file('data://bny_poc/german_credit_input/X_test.json').getFile().name, lines=True, orient='records')
     print(test_sample.shape)
